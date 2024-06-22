@@ -14,7 +14,6 @@ const Navbar = () => {
     }
 
     useEffect(() => {
-
         window.addEventListener('scroll', changeBackground);
     }, []);
 
