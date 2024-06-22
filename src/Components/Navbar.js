@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 const Navbar = () => {
     const [navbar, setNavbar] = useState(false)
@@ -13,7 +13,12 @@ const Navbar = () => {
         }
     }
 
-    window.addEventListener('scroll', changeBackground);
+    useEffect(() => {
+
+        window.addEventListener('scroll', changeBackground);
+    }, []);
+
+
 
     return (
         <nav className={`flex justify-between items-center z-50 fixed w-full p-5 px-40 ${navbar ? 'bg-[#00357B]' : 'bg-transparent'}`} >
