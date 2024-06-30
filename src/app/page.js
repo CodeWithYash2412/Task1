@@ -1,19 +1,27 @@
-import Amenities from "@/Components/Amenities"
-import Features from "@/Components/Features"
+import Add from "@/Components/Add"
+import EndHero from "@/Components/EndHero"
+import Feature from "@/Components/Feature"
 import Footer from "@/Components/Footer"
-import Hero from "@/Components/Hero"
+import HeroSec from "@/Components/HeroSec"
 import Navbar from "@/Components/Navbar.js"
+import Testimonials from "@/Components/Testimonials"
+import { IoIosArrowUp } from "react-icons/io";
+
 
 const page = () => {
   return (
     <div>
       <Navbar />
-      <Hero />
-      <Features />
-      <Amenities />
+      <HeroSec />
+      <Feature />
+      <Add />
+      <Testimonials />
+      <EndHero />
       <Footer />
+
     </div>
   )
 }
 
 export default page
+
